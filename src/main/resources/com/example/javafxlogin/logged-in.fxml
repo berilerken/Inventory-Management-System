@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="606.0" prefWidth="1015.0" style="-fx-background-color: #7952AE; -fx-background-image: url(&quot;https://ferociousmedia.com/wp-content/uploads/2015/10/Material-design.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.LoggedInController">
+   <children>
+      <Button fx:id="button_change" layoutX="792.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="186.0" text="Change Password">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="label_welcome" layoutX="138.0" layoutY="-22.0" prefHeight="125.0" prefWidth="482.0" text="Welcome " textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="user_img" fitHeight="150.0" fitWidth="200.0" layoutX="810.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@userlogoo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button_logout" layoutX="792.0" layoutY="303.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="186.0" text="Logout">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="66.0" text="🔙">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_products" layoutX="35.0" layoutY="231.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="37.0" prefWidth="186.0" text="Products">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="606.0" prefWidth="1015.0" style="-fx-background-color: #F1948A;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.ProductAddController">
+   <children>
+      <AnchorPane layoutX="-19.0" prefHeight="606.0" prefWidth="1043.0" style="-fx-background-color: #7952AE; -fx-background-image: url(&quot;https://ferociousmedia.com/wp-content/uploads/2015/10/Material-design.jpg&quot;);">
+         <children>
+            <Label layoutX="372.0" layoutY="24.0" prefHeight="68.0" prefWidth="297.0" text="ADD NEW ITEM " textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="add_name" layoutX="419.0" layoutY="165.0" prefHeight="25.0" prefWidth="203.0" />
+            <TextField fx:id="add_brand" layoutX="419.0" layoutY="213.0" prefHeight="25.0" prefWidth="203.0" />
+            <TextField fx:id="add_price" layoutX="419.0" layoutY="266.0" prefHeight="25.0" prefWidth="203.0" />
+            <Label layoutX="179.0" layoutY="166.0" style="-fx-background-color: #F1948A;" text="Product Name:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="267.0" style="-fx-background-color: #F1948A;" text="Product Price:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="214.0" style="-fx-background-color: #F1948A;" text="Product Brand:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="add_button" layoutX="584.0" layoutY="436.0" mnemonicParsing="false" onAction="#addItem" prefHeight="42.0" prefWidth="125.0" style="-fx-background-color: #ffffff;" text="Add Item ">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="price_valid" layoutX="419.0" layoutY="295.0" prefHeight="17.0" prefWidth="203.0" textFill="RED" />
+            <Label fx:id="name_valid" layoutX="419.0" layoutY="190.0" prefHeight="17.0" prefWidth="203.0" textFill="RED" />
+            <Label fx:id="brand_valid" layoutX="419.0" layoutY="238.0" prefHeight="17.0" prefWidth="203.0" textFill="RED" />
+            <Label layoutX="176.0" layoutY="325.0" prefHeight="23.0" prefWidth="131.0" style="-fx-background-color: #F1948A;" text="Product Photo:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="upload" layoutX="419.0" layoutY="324.0" mnemonicParsing="false" onAction="#uploadAction" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #ffffff;" text="Upload Photo">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="upload_url" layoutX="520.0" layoutY="374.0" prefHeight="23.0" prefWidth="159.0" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="url_valid" layoutX="525.0" layoutY="405.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

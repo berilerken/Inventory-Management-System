@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;https://ferociousmedia.com/wp-content/uploads/2015/10/Material-design.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.StockUpdateController">
+   <children>
+      <Label layoutX="174.0" layoutY="14.0" prefHeight="17.0" prefWidth="252.0" text="STOCK UPDATE" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font></Label>
+      <Label layoutX="95.0" layoutY="116.0" text="Stock ID:" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="166.0" text="Quantity:" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stock_id" layoutX="214.0" layoutY="115.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="t_quantity" layoutX="214.0" layoutY="165.0" />
+      <Button fx:id="update_button" layoutX="248.0" layoutY="278.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="105.0" text="UPDATE">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="quantity_valid" layoutX="214.0" layoutY="200.0" prefHeight="17.0" prefWidth="149.0" textFill="RED">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

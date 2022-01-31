@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="606.0" prefWidth="1015.0" style="-fx-background-color: #647684; -fx-background-image: url(&quot;https://ferociousmedia.com/wp-content/uploads/2015/10/Material-design.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.ProductStockController">
+   <children>
+      <TableView fx:id="table_product" layoutY="166.0" prefHeight="440.0" prefWidth="1018.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="100.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="156.0" text="Name" />
+            <TableColumn fx:id="col_brand" prefWidth="187.0" text="Brand" />
+            <TableColumn fx:id="col_price" prefWidth="179.0" text="Price" />
+            <TableColumn fx:id="col_quantity" prefWidth="226.0" text="Quantity" />
+            <TableColumn fx:id="col_location" prefWidth="169.0" text="Location" />
+            <TableColumn fx:id="col_id1" prefWidth="100.0" text="ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="button_exit" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #E74C3C;" text="❌" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font></Button>
+      <Label layoutX="4.0" layoutY="79.0" text="Product Name:" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="129.0" text="Product Brand:" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search_name" layoutX="115.0" layoutY="76.0" onKeyPressed="#searchName" prefHeight="25.0" prefWidth="128.0" promptText="Search by name" />
+      <TextField fx:id="search_brand" layoutX="115.0" layoutY="125.0" onKeyPressed="#searchBrand" prefHeight="25.0" prefWidth="128.0" promptText="Search by brand" />
+      <Label layoutX="51.0" layoutY="2.0" prefHeight="50.0" prefWidth="961.0" text="                                  STOCK OPERATIONS" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="425.0" endY="-48.0" layoutX="593.0" layoutY="98.0" startX="-543.0" startY="-48.0" stroke="WHITE" />
+      <Button fx:id="stock_update" layoutX="839.0" layoutY="79.0" mnemonicParsing="false" onAction="#stockUpdate" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #2ECC71;" text="Stock Update" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_ref" layoutX="692.0" layoutY="79.0" mnemonicParsing="false" onAction="#refresh" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #F4D03F;" text="Refresh" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

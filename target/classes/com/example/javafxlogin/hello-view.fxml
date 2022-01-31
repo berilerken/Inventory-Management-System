@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.HelloController">
+   <children>
+      <AnchorPane prefHeight="606.0" prefWidth="542.0" style="-fx-background-color: #7952AE; -fx-background-image: url(&quot;https://ferociousmedia.com/wp-content/uploads/2015/10/Material-design.jpg&quot;); -fx-border-image-repeat: no-repeat; -fx-background-position: -110px -5px; -fx-background-size: 900 700;">
+         <children>
+            <ImageView fx:id="tf_userimage" fitHeight="193.0" fitWidth="211.0" layoutX="198.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@inventory.png" />
+               </image></ImageView>
+            <Label layoutX="72.0" layoutY="222.0" prefHeight="89.0" prefWidth="135.0" text="STOCK" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="277.0" prefHeight="89.0" prefWidth="279.0" text="MANAGEMENT" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="333.0" prefHeight="89.0" prefWidth="279.0" text="SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="Corbel Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="606.0" prefWidth="732.0" style="-fx-background-color: #647684;">
+         <children>
+            <TextField fx:id="tf_username" layoutX="237.0" layoutY="285.0" prefHeight="25.0" prefWidth="185.0" promptText="Username" style="-fx-background-color: #f7f7f7;" />
+            <Label layoutX="137.0" layoutY="284.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font></Label>
+            <Label layoutX="137.0" layoutY="338.0" prefHeight="26.0" prefWidth="97.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="21.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="tf_password" layoutX="237.0" layoutY="338.0" prefHeight="25.0" prefWidth="185.0" promptText="Password" style="-fx-background-color: #f7f7f7;" />
+            <Button fx:id="button_login" layoutX="89.0" layoutY="405.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="185.0" style="-fx-background-color: #f7f7f7;" text="Login">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="248.0" layoutY="470.0" prefHeight="17.0" prefWidth="106.0" text="Not a user?  " textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_sign_up" layoutX="248.0" layoutY="493.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="106.0" style="-fx-background-color: transperent;" text="Sign Up!" textFill="#0022ff" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="227.0" layoutY="163.0" prefHeight="61.0" prefWidth="279.0" text="USER LOGIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_exit" layoutX="329.0" layoutY="405.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="185.0" style="-fx-background-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import javafx.scene.layout.AnchorPane?&gt;&lt;AnchorPane prefHeight=&quot;200.0&quot; prefWidth=&quot;200.0&quot; xmlns=&quot;http://javafx.com/javafx/11.0.2&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot; /&gt;;" text="Exit">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="username_label" layoutX="237.0" layoutY="319.0" prefHeight="17.0" prefWidth="185.0" textFill="RED">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="password_label" layoutX="237.0" layoutY="372.0" prefHeight="17.0" prefWidth="185.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="tf_lock" fitHeight="135.0" fitWidth="173.0" layoutX="234.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@userlogoo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</HBox>

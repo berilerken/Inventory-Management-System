@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="606.0" prefWidth="1015.0" style="-fx-background-color: #647684;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.ProductController">
+   <children>
+      <TableView fx:id="table_product" layoutY="166.0" prefHeight="440.0" prefWidth="1018.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="171.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="314.0" text="Name" />
+            <TableColumn fx:id="col_brand" prefWidth="310.0" text="Brand" />
+            <TableColumn fx:id="col_price" prefWidth="219.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="button_exit" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #E74C3C;" text="❌" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="button_ref" layoutX="740.0" layoutY="79.0" mnemonicParsing="false" onAction="#refresh" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #F1C40F;" text="Refresh" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="button_add" layoutX="369.0" layoutY="79.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #9B59B6;" text=" Add New Item" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="button_upt" layoutX="613.0" layoutY="79.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #27AE60;" text="Update" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="button_del" layoutX="260.0" layoutY="79.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="44.0" prefWidth="101.0" style="-fx-background-color: #E74C3C;" text="Delete" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="4.0" layoutY="79.0" text="Product Name:" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="129.0" text="Product Brand:" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search_name" layoutX="115.0" layoutY="76.0" onKeyPressed="#searchName" prefHeight="25.0" prefWidth="128.0" promptText="Search by name" />
+      <TextField fx:id="search_brand" layoutX="115.0" layoutY="125.0" onKeyPressed="#searchBrand" prefHeight="25.0" prefWidth="128.0" promptText="Search by brand" />
+      <Label layoutX="51.0" layoutY="2.0" prefHeight="50.0" prefWidth="961.0" text="                       PRODUCT LIST AND OPERATIONS " textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="425.0" endY="-48.0" layoutX="593.0" layoutY="98.0" startX="-543.0" startY="-48.0" stroke="WHITE" />
+      <Button fx:id="button_details" layoutX="490.0" layoutY="79.0" mnemonicParsing="false" onAction="#detailsAction" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #3498DB;" text="Show Details" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="button_stock" layoutX="864.0" layoutY="79.0" mnemonicParsing="false" onAction="#stockAction" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #F39C12;" text="Stock Upd." textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

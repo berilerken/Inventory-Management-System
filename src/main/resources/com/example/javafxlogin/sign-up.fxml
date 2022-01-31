@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="1015.0" style="-fx-background-image: url(&quot;https://ferociousmedia.com/wp-content/uploads/2015/10/Material-design.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxlogin.SignUpController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-image: url(&quot;https://ferociousmedia.com/wp-content/uploads/2015/10/Material-design.jpg&quot;);" />
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="606.0" prefWidth="588.0" style="-fx-background-color: #647684;">
+         <children>
+            <TextField fx:id="tf_username" layoutX="250.0" layoutY="301.0" prefHeight="25.0" prefWidth="185.0" promptText="Username" />
+            <Label layoutX="132.0" layoutY="301.0" text="Username:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="376.0" text="Password:" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="tf_password" layoutX="250.0" layoutY="375.0" prefHeight="25.0" prefWidth="185.0" promptText="Password" />
+            <Label layoutX="231.0" layoutY="176.0" text="SIGN UP " textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_signup" layoutX="250.0" layoutY="441.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="185.0" style="-fx-background-color: #fffff;" text="Sign Up">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="146.0" layoutY="505.0" text="Already a member?" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_log_in" layoutX="292.0" layoutY="498.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="122.0" style="-fx-background-color: transperant;" text="Log In!" textFill="RED" underline="true">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="username_label" layoutX="250.0" layoutY="336.0" prefHeight="17.0" prefWidth="185.0" textFill="RED" />
+            <Label fx:id="pass_label" layoutX="250.0" layoutY="408.0" prefHeight="17.0" prefWidth="185.0" textFill="RED" />
+            <ImageView fx:id="tf_userimage1" fitHeight="147.0" fitWidth="174.0" layoutX="222.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@userlogoo.png" />
+               </image></ImageView>
+         </children></AnchorPane>
+   </children>
+</HBox>
